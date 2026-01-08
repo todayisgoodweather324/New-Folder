@@ -5,8 +5,6 @@ os.environ["PYGAME_HIDE_SUPPORT_PROMPT"] = "hide"
 import time
 import pygame
 
-
-1
 clock = pygame.time.Clock()
 pygame.mixer.init()
 music = True
