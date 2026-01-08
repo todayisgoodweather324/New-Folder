@@ -20,6 +20,7 @@ def play_music(song):
         if pygame.mixer.music.get_busy():
             print("Playing...")
             command = input("Please type 'pause', 'unpause', 'stop', or 'q'.\n").lower()
+            
             if command == "pause":
                 pygame.mixer.music.pause()
                 print("Music paused")
@@ -45,9 +46,9 @@ def play_music(song):
             else:
                 print("Unknown command")
                 command = input("Please type 'pause', 'unpause', 'stop', or 'q'.\n")
-    else:
-        print("Music finished playing.")
-        music = False
+        else:
+            print("Music finished playing.")
+            music = False
 
     pygame.mixer.music.stop()
 
